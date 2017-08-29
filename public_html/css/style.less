@@ -1,0 +1,27 @@
+@color-body: #ff9900;
+@h2color:black;
+
+.italic(){
+font-style:oblique;
+	
+}
+
+body {
+    
+    background-color:lighten(@color-body, 30%);
+    h2 {
+    color:@h2color;
+    }
+    
+}
+@color-hover: silver;
+div:hover{
+	 background-color:@color-hover;
+}
+
+@size:2pt;
+
+p{
+	font-size:10pt+@size;
+	.italic();
+}
